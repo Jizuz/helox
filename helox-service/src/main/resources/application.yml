@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: helox
+  data:
+    elasticsearch:
+      cluster-nodes: 127.0.0.1:9300
+      cluster-name: elasticsearch
+
+server:
+  port: 8767
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+
+swagger:
+  enable: true
